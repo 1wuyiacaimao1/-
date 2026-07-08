@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮生</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="deco-frame"></div>
+  <div class="floating-lights">
+    <div class="light-mote"></div>
+    <div class="light-mote"></div>
+    <div class="light-mote"></div>
+    <div class="light-mote"></div>
+    <div class="light-mote"></div>
+  </div>
+  <div class="page">
+    <header class="header">
+      <h1 class="title">浮生</h1>
+      <div class="birthday-wrap">
+        <input type="text" class="birthday-input" id="birthday-input"
+               placeholder="请输入出生月日" maxlength="10" autocomplete="off">
+        <button class="birthday-clear" id="birthday-clear" title="清除">×</button>
+      </div>
+    </header>
+
+    <div class="main-area">
+      <aside class="history">
+        <div class="history-label">最近做过</div>
+        <ul class="history-list" id="history-list">
+          <li class="history-empty">尚无记录</li>
+        </ul>
+      </aside>
+
+      <div class="right-col">
+        <div class="info-boxes">
+          <div class="info-box">
+            <div class="info-box-label">今日运势</div>
+            <div class="info-box-content" id="ganzhi-content"></div>
+          </div>
+          <div class="info-box">
+            <div class="info-box-label">今日适合做点什么</div>
+            <div class="info-box-content" id="recommend-content"></div>
+          </div>
+        </div>
+
+        <div class="action-box">
+          <div class="random-btn-wrap">
+            <button class="random-btn" id="random-btn">随机一下</button>
+          </div>
+          <div class="result-area" id="result-area">
+            <span class="result-placeholder">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/activities.js"></script>
+  <script src="js/gz.js"></script>
+  <script src="js/wuxing.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
